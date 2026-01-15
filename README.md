@@ -1,3 +1,27 @@
-# RecMap
-From Item-Side to User-Side: Boosting Recommendation with Multimodal-Based User Profile
-In the era of information overload, Recommender Systems (RS) play a vital role in helping users efficiently discover desired content. Based on RS, Multimodal Recommender Systems (MMRS) introduce multimodal information (images, text) to alleviate problems such as cold-start and data sparsity. However, most existing methods only implicitly leverage this information to learn user preferences, without explicitly modeling user preferences based on items' multimodal information. In this paper, we propose a novel recommendation framework (RecMap) to transfer multimodal information from the item-side to the user-side. Specifically, RecMap generates user profiles based on item-side multimodal information and user-item interaction history. These profiles are further encoded into features and integrated into a user–item profile graph for modeling user  preference. On the other hand, we construct an item-item multimodal graph based on multimodal information to learn the high-order semantic relationships among items. In addition, we design a cluster contrastive loss to capture group-level user preferences by aligning user and item clusters across multimodal spaces. Extensive experiments on three real-world Amazon datasets demonstrate that RecMap significantly outperforms baselines, particularly in long-list recommendation scenarios.
+# From Item-Side to User-Side: Boosting Recommendation with Multimodal-Based User Profile
+
+<!-- PROJECT LOGO -->
+
+## Introduction
+
+This is the Pytorch implementation for our RecMap paper:
+
+>From Item-Side to User-Side: Boosting Recommendation with Multimodal-Based User Profile
+
+## Environment Requirement
+- python 3.9
+- Pytorch 2.1.0
+
+## Dataset
+
+We provide three processed datasets: Baby, Sports, Clothing.
+
+Download from Google Drive: [Baby/Sports/Clothing](https://drive.google.com/drive/folders/1tU4IxYbLXMkp_DbIOPGvCry16uPvolLk)
+
+## Training
+  ```
+  cd ./src
+  python main.py
+  ```
+
+The code is released for academic research use only.
