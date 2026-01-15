@@ -1,0 +1,25 @@
+embedding_size: 1024
+feat_embed_dim: 1024
+weight_size: [64, 64]
+
+lambda_coeff: 0.9
+learning_rate: [0.001]
+
+gamma: [0.0001]
+mu: [0.01]
+
+n_mm_layers: 1
+n_ui_layers: 2
+n_up_layers: 2
+
+knn_k_up: 10
+knn_k_mm: 10
+
+mm_image_weight: 0.1
+up_image_weight: 0.7
+dropout: 0.2
+
+num_clusters: 800
+tau: 0.1
+
+hyper_parameters: ["learning_rate", "gamma", "mu"]
