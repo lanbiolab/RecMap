@@ -1,0 +1,41 @@
+embedding_size: 1024
+feat_embed_dim: 1024
+weight_size: [64, 64]
+
+lambda_coeff: 0.9
+learning_rate: [0.001]
+
+#baby
+gamma: [0.0001]
+mu: [0.01]
+
+#clothing
+#gamma: [0.0001]
+#mu: [0.01]
+
+#sports
+#gamma: [0.001]
+#mu: [0.01]
+
+n_mm_layers: 1
+n_ui_layers: 2
+n_up_layers: 2
+
+knn_k_up: 10
+knn_k_mm: 10
+
+#baby up:10; mm:10
+#clothing up:15; mm:5
+#sports up:15; mm:5
+
+mm_image_weight: 0.1
+up_image_weight: 0.7
+dropout: 0.2
+# baby: dropout:0.2; up_w:0.7; mm_w:0.1; num_clusters:800; tau:0.1
+# clothing: dropout:0.8; up_w:0.8; mm_w:0.3; num_clusters:600; tau:0.1
+# clothing: dropout:0.8; up_w:0.8; mm_w:0.2; num_clusters:1000; tau:0.1
+
+num_clusters: 800
+tau: 0.1
+
+hyper_parameters: ["learning_rate", "gamma", "mu"]
